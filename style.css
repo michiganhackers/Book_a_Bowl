@@ -1,0 +1,98 @@
+p{
+    color:blue;
+}
+h1{
+    color:green
+}
+body{
+    background-color: blanchedalmond;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 100px;
+    /*position: absolute;*/
+}
+
+.available_button{
+    fill: #FD3131;
+    stroke-width: 1px;
+    stroke: #000;
+}
+
+.unavailable_button{
+    fill: #BAADAD;
+    stroke-width: 1px;
+    stroke: #000;
+}
+.login_screen{
+  height: 100vh;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       
+  align-items: center;  
+}
+.login_button{
+    background-color: #00274C;
+    width: 119px; 
+    height: 70px;
+    border: 1px solid #00274C;
+    border-radius: 8px;
+    color: #F5F5F5; 
+   margin-bottom: 40px; 
+}
+.login_field input {
+    width: 278px;
+    height: 65px;
+    background-color: #E6E0E9;
+    border-radius: 4px 4px;
+    color: #1D1B20;
+    margin: 20px;
+    font-size: 16px;
+} 
+.login_field input::placeholder {
+    color: #1D1B20;
+}
+.form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  gap: 16px;
+}
+/* */
+.carousel-row {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card {
+  height: 140px;
+  border-radius: 12px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+} 
+.container{ 
+    position: relative;
+}
+#logintitle{
+    position: absolute;
+}
