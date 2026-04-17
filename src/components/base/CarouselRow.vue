@@ -41,13 +41,13 @@ const config = {
           <div class="overlay">
             <div class="top">
               <span class="rating">⭐ {{ item.rating }}</span>
-              <span class="price">{{ item.price }}</span>
+              <span class="price">{{ item.price_string }}</span>
             </div>
 
             <div class="bottom">
               <div class="name">{{ item.name }}</div>
               <div class="time">
-                {{ item.availableTimes[0] }}
+                {{ item.hours.open }} – {{item.hours.close}}
               </div>
             </div>
           </div>

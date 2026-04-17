@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
 public class Recommendation {
 
     //Can and will probably condense the amount of arguments in both generate and recommend
@@ -8,6 +8,7 @@ public class Recommendation {
                                  ArrayList<String> fav, ArrayList<String> res, boolean filRes, boolean filFamily){
         generate(restaurants,location,cuisine,ratings,available,price,preferred_price,fav,res,filRes,filFamily);
         sort(restaurants,0,restaurants.size()-1);
+        Collections.reverse(restaurants);
         return restaurants;
     }
     private static void sort(ArrayList<Restaurant> list, int l, int r) {
@@ -90,10 +91,6 @@ public class Recommendation {
                     prob += 0.7*pri;
                     break;
             }
-            System.out.println();
-            System.out.println(familyFriendly);
-            System.out.println(r.get(i).getFamily());
-            System.out.println();
             if (familyFriendly && r.get(i).getFamily()){
                 prob += 1.3;
             }

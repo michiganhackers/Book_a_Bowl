@@ -14,6 +14,7 @@ function goToMain(){
 <template>
   <div class="login_screen">
   <h1 class="title" id="logintitle">Book A Bowl! </h1>
+  <img src="/src/images/Logo.png">
   <div class="form">
     <BaseInput v-model="username" label="Username" placeholder="username" class="login_field" />
     <BaseInput v-model="password" label="Password" placeholder="password" type="password" class="login_field"/>

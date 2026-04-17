@@ -1,44 +1,85 @@
-import type { Restaurant } from '../types/restaurant'
+import type { Restaurant } from '../types/restaurants'
 
 export const mockRestaurants: Restaurant[] = [
   {
     id: 1,
     name: 'Sushi Place',
     rating: 4.7,
-    price: '$$',
+    price: 2,
+    price_string: '$$',
     image: 'https://picsum.photos/400/300?1',
-    availableTimes: ['6:00 PM', '6:30 PM']
+    availableTimes: ['6:00 PM', '6:30 PM'],
+    hours: { open: '11:00 AM', close: '10:00 PM' },
+    phone: '555-0101',
+    website: 'https://example.com',
+    cuisine: 'japanese',
+    available: 0,
+    distance: 4.8,
+    family: false,
+    restrictions: []
   },
   {
     id: 2,
     name: 'Italian Bistro',
     rating: 4.5,
-    price: '$$$',
+    price: 3,
+    price_string: '$$$',
     image: 'https://picsum.photos/400/300?2',
-    availableTimes: ['7:00 PM']
+    availableTimes: ['7:00 PM'],
+    hours: { open: '12:00 PM', close: '11:00 PM' },
+    phone: '555-0102',
+    cuisine: 'italian',
+    available: 0,
+    distance: 6,
+    family: false,
+    restrictions: []
   },
   {
     id: 3,
     name: 'Burger Spot',
     rating: 4.3,
-    price: '$',
+    price: 1,
+    price_string: '$',
     image: 'https://picsum.photos/400/300?3',
-    availableTimes: ['5:30 PM']
+    availableTimes: ['5:30 PM'],
+    hours: { open: '10:00 AM', close: '9:00 PM' },
+    cuisine: 'american',
+    available: 0,
+    distance: 3,
+    family: false,
+    restrictions: []
   },
   {
     id: 4,
     name: 'Thai Kitchen',
     rating: 4.6,
-    price: '$$',
+    price: 2,
+    price_string: '$$',
     image: 'https://picsum.photos/400/300?4',
-    availableTimes: ['6:15 PM']
+    availableTimes: ['6:15 PM'],
+    hours: { open: '11:30 AM', close: '10:30 PM' },
+    cuisine: 'thai',
+    available: 0,
+    distance: 4.3,
+    family: true,
+    restrictions: []
   },
   {
     id: 5,
     name: 'Steakhouse',
     rating: 4.8,
-    price: '$$$$',
+    price: 4,
+    price_string: '$$$$',
     image: 'https://picsum.photos/400/300?5',
-    availableTimes: ['8:00 PM']
+    availableTimes: ['8:00 PM'],
+    hours: { open: '4:00 PM', close: '11:00 PM' },
+    phone: '555-0105',
+    website: 'https://example.com',
+    cuisine: 'american',
+    available: 0,
+    distance: 3.6,
+    family: true,
+    restrictions: []
+    
   }
 ]

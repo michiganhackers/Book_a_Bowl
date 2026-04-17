@@ -5,7 +5,7 @@ h1{
     color:green
 }
 body{
-    background-color: blanchedalmond;
+    background-color: #EAEFF5;
 }
 
 .middle{
@@ -53,13 +53,12 @@ body{
    margin-bottom: 40px; 
 }
 .login_field input {
+    display: flex;
     width: 278px;
     height: 65px;
-    background-color: #E6E0E9;
-    border-radius: 4px 4px;
-    color: #1D1B20;
-    margin: 20px;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px 4px 0 0;
 } 
 .login_field input::placeholder {
     color: #1D1B20;
@@ -94,5 +93,16 @@ body{
     position: relative;
 }
 #logintitle{
-    position: absolute;
+    /*position: absolute;*/
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.modal { 
+      z-index: 99999;
+      position: fixed; /*changed from relative + z-index*/
+
 }
